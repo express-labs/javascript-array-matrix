@@ -1,6 +1,8 @@
 # JavaScript Array Matrix
 A lightweight and performant data structure for storing JavaScript objects in an _n_-way or _n_-order array matrix.
 
+[Array Matrix Demo](https://express-labs.github.io/javascript-array-matrix/)
+
 ## Table of contents
   * [Getting Started](#getting-started)
     * [Making a Matrix](#making-a-matrix)
@@ -142,6 +144,8 @@ const allSmallShirts = matrix.getDimension({ size: 'Medium' });
 __NOTE:__ Currently `ArrayMatrix` only supports returning 1 dimension at a time. Adding functionality
 to return more than one dimension is being reviewed and undergoing performance tests.
 
+For examples on how this can scale to use 3, 4, ... _n_ level orders, see our [Demo](https://express-labs.github.io/javascript-array-matrix/).
+
 ## Additional Methods
 ### getAxes
 __NOTE:__ _axes_ is the plural of _axis_, and is not the the tool used by lumberjacks
@@ -178,6 +182,8 @@ For more advanced demonstration of different 2, 3, and 4 order array
 matrices, the `App` has examples. Running the project locally starts
 the demo application, where you can play with queries and see performance
 results as well.
+
+Here is the [Demo](https://express-labs.github.io/javascript-array-matrix/).
 
 ## Dev Workflow
 - `npm run dev` starts a local development server, opens the dev page with your default browser, and watches for changes via livereload<br><br>
