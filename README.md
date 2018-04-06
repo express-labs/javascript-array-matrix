@@ -43,7 +43,8 @@ const myMatrix = new ArrayMatrix(configs);
 
 ### Configuration Properties
 #### data Property
-`{Array<Object>}`
+__type:__ {Array<Object>}
+
 _Required_
 
 This is an array of objects that will be parsed and organized into the array matrix. The objects
@@ -51,7 +52,8 @@ do not have to match exactly, but each object __must__ have the properties corre
 orders passed in as arguments.
 
 #### orders Property
-`{Array<String>}`
+__type:__ {Array<String>}
+
 _Required_
 
 Each string in they array must correspond to a key or property on the objects passed
@@ -61,7 +63,7 @@ The more properties that are provided, the higher the order or rank of the matri
 more dimensions in the array. *You should provide the minimum number of orders required
 to map each object to a cell in the array.*
 
-*Example:* if you are selling a T-shirt, you would want two orders: `size` and `color`.
+__Example:__ if you are selling a T-shirt, you would want two orders: `size` and `color`.
 When you know the `size` and `color` of the T-shirt, you would use those values to access
 the product in the Array Matrix, allowing you to get the sku, price, availability, etc.
 
