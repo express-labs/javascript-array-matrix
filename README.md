@@ -1,7 +1,7 @@
 # JavaScript Array Matrix
 A lightweight and performant data structure for storing JavaScript objects in an _n_-way or _n_-order array matrix.
 
-# Table of contents
+## Table of contents
   * [Getting Started](#getting-started)
     * [Making a Matrix](#making-a-matrix)
       * [Configuration Properties](#configuration-properties)
