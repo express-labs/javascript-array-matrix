@@ -1,0 +1,128 @@
+{
+  "name": "@express-labs/javascript-array-matrix",
+  "version": "0.0.0",
+  "description": "A JavaScript module for storing and querying multi-dimensional or n-way array data",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "keywords": [
+    "multi-dimensional array",
+    "array matrix",
+    "javascript matrix",
+    "n-order array",
+    "n-way array",
+    "multidimensional array",
+    "3 way array"
+  ],
+  "scripts": {
+    "test": "BABEL_ENV=test jest --no-cache",
+    "dev": "NODE_ENV=development rollup -w -c rollup.config.dev.js",
+    "lint-fix": "eslint . --fix --ext .js --ext .jsx",
+    "prebuild": "rimraf dist",
+    "build": "NODE_ENV=production rollup -c rollup.config.cjs.js && NODE_ENV=production rollup -c rollup.config.es.js",
+    "build:watch": "watch 'npm run build' src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/express-labs/javascript-array-matrix"
+  },
+  "author": "Tim Steele",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/express-labs/javascript-array-matrix"
+  },
+  "homepage": "https://github.com/express-labs/javascript-array-matrix#readme",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "babel-preset-react": "^6.24.1",
+    "cssnano": "^3.10.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "escape-string-regexp": "^1.0.5",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.0",
+    "eslint-config-mrb3k-jest": "^0.3.2",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-react": "^7.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^21.2.1",
+    "postcss-cssnext": "^2.11.0",
+    "postcss-import": "^10.0.0",
+    "postcss-modules": "^0.8.0",
+    "postcss-simple-vars": "^4.0.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-json-view": "^1.16.1",
+    "replace-in-file": "^2.5.3",
+    "rollup": "^0.53.3",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.2.1",
+    "rollup-plugin-eslint": "^3.0.0",
+    "rollup-plugin-livereload": "^0.4.0",
+    "rollup-plugin-multi-entry": "^2.0.1",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-postcss": "^0.5.0",
+    "rollup-plugin-replace": "^1.1.1",
+    "rollup-plugin-serve": "^0.3.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "rollup-watch": "^3.2.2",
+    "uglify-es": "^3.3.5",
+    "watch": "^1.0.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dev/",
+      "/dist/"
+    ],
+    "testMatch": [
+      "**/__tests__/**.test.js?(x)"
+    ],
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "src/**/*.jsx",
+      "src/ArrayMatrix/ArrayMatrix.js",
+      "src/helpers/**.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/dev/",
+      "/dist/",
+      "/src/App/examples/",
+      "/src/App/mutate/",
+      "index.js"
+    ],
+    "coverageReporters": [
+      "text",
+      "json",
+      "json-summary",
+      "lcov"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "setupFiles": [
+      "raf/polyfill"
+    ]
+  }
+}

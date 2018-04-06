@@ -1,0 +1,78 @@
+/*
+  All of the CSS below is strictly for the demo.  none of the components rely on this for actual
+  functionality.
+*/
+body {
+  background-color: #f2f2f2;
+  color: #333333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3.157em;
+}
+
+h2 {
+  font-size: 2.369em;
+}
+
+h3 {
+  font-size: 1.777em;
+}
+
+h4 {
+  font-size: 1.333em;
+}
+
+h5 {
+  font-size: 1.333em;
+  font-style: italic;
+}
+
+h6 {
+  font-size: 1em;
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.414em 0 0.5em;
+  line-height: 1.2em;
+}
+
+pre {
+  background-color: #e1e1e1;
+  border: solid 1px #cccccc;
+  font-family: 'Source Code Pro', monospace;
+  padding: 1em;
+}
+
+table {
+  border: solid 1px #cccccc;
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: solid 1px #cccccc;
+  padding: .1em .2em;
+}
+
+th {
+  font-weight: 700;
+  text-align: left;
+}
+
+.headline {
+  background-color: darkgrey;
+}
+
+.slider {
+  max-width: 800px;
+}
+
+.verticalSlider {
+  width: 100%;
+  max-width: 300px;
+}
