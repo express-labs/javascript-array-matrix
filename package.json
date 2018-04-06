@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "test": "BABEL_ENV=test jest --no-cache",
+    "docs": "NODE_ENV=production rollup -c rollup.config.docs.js && ncp ./dev ./docs",
     "dev": "NODE_ENV=development rollup -w -c rollup.config.dev.js",
     "lint-fix": "eslint . --fix --ext .js --ext .jsx",
     "prebuild": "rimraf dist",
@@ -56,6 +57,7 @@
     "eslint-plugin-react": "^7.0.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^21.2.1",
+    "ncp": "^2.0.0",
     "postcss-cssnext": "^2.11.0",
     "postcss-import": "^10.0.0",
     "postcss-modules": "^0.8.0",
