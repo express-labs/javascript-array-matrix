@@ -24,16 +24,16 @@ A lightweight and performant data structure for storing JavaScript objects in an
 
 First, add the module to your project:
 
-`npm i -S @express-labs/javascript-array-matrix`
+`npm i -S javascript-array-matrix`
 
 Import `ArrayMatrix` into your project:
 
 ```
-import ArrayMatrix from '@express-labs/array-matrix';
+import ArrayMatrix from 'javascript-array-matrix';
 ```
 OR
 ```
-const ArrayMatrix = require('@express-labs/array-matrix');
+const ArrayMatrix = require('javascript-array-matrix');
 ```
 
 ## Making a Matrix
