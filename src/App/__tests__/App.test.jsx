@@ -44,4 +44,10 @@ describe('<App />', () => {
     wrapper.update();
     expect(wrapper.find('#example--3').length).toBe(1);
   });
+  it('should render example 5', () => {
+    const wrapper = shallow(<App />);
+    wrapper.find('.select').simulate('change', { target: { value: '4' } });
+    wrapper.update();
+    expect(wrapper.find('#example--4').length).toBe(1);
+  });
 });

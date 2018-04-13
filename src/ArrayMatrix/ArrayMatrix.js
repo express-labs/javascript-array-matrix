@@ -8,7 +8,7 @@ import { flatten } from '../helpers';
  *
  * @exports ArrayMatrix
  */
-const ArrayMatrix = function Tensor() {
+const ArrayMatrix = function ArrayMatrix() {
   /**
    * @var props
    * @description array matrix properties
@@ -45,7 +45,7 @@ const ArrayMatrix = function Tensor() {
    */
   function constructor({ data, orders }) {
     /*
-      Store properties in the tensor object.
+      Store properties in the array matrix.
     */
     props.order = orders.length;
     props.orders = orders;
