@@ -1,4 +1,4 @@
-// This is a development app for local dev work on react-carousel
+// This is a development app for local dev work on arrayMatrix
 import React from 'react';
 import ReactDOM from 'react-dom';
 import DevelopmentApp from './App/App';

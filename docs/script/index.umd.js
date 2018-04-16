@@ -21160,7 +21160,7 @@ var DevelopmentApp = function (_React$Component) {
   return DevelopmentApp;
 }(react.Component);
 
-// This is a development app for local dev work on react-carousel
+// This is a development app for local dev work on arrayMatrix
 reactDom.render(react.createElement(DevelopmentApp, null), document.getElementById('app'));
 
 })));

@@ -12,7 +12,7 @@ export default {
   input: 'src/index.js',
   cache: cache,
   output: {
-    name: 'javascriptTensor',
+    name: 'arrayMatrix',
     format: 'cjs',
     sourcemap: true,
     sourcemapFile: path.resolve('dist/main.cjs.js'),

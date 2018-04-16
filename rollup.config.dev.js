@@ -23,7 +23,7 @@ export default {
   input: 'src/app.js',
   cache: cache,
   output: {
-    name: 'JavaScript Array Matrix',
+    name: 'arrayMatrix',
     file: 'dev/script/index.umd.js',
     format: 'umd',
     sourcemap: true,
