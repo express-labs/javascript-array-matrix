@@ -20168,7 +20168,7 @@ var flatten$1 = function flatten(array) {
  *
  * @exports ArrayMatrix
  */
-var ArrayMatrix$1 = function Tensor() {
+var ArrayMatrix$1 = function ArrayMatrix() {
   /**
    * @var props
    * @description array matrix properties
@@ -20208,7 +20208,7 @@ var ArrayMatrix$1 = function Tensor() {
         orders = _ref.orders;
 
     /*
-      Store properties in the tensor object.
+      Store properties in the array matrix.
     */
     props.order = orders.length;
     props.orders = orders;

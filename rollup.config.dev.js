@@ -23,7 +23,7 @@ export default {
   input: 'src/app.js',
   cache: cache,
   output: {
-    name: 'javascriptTensor',
+    name: 'JavaScript Array Matrix',
     file: 'dev/script/index.umd.js',
     format: 'umd',
     sourcemap: true,
