@@ -19762,7 +19762,7 @@ var skus$1 = [{
   sizeExtension2: 'Tall'
 }];
 
-var skus$2 = [{
+var skus$3 = [{
   skuId: '11556855',
   sizeName: 'W28 L28',
   colorName: 'BLUE',
@@ -20338,6 +20338,10 @@ var ArrayMatrix$1 = function ArrayMatrix() {
   function deadReckon(plane, indices) {
     if (!indices || !indices.length) return plane;
 
+    // If we are missing an entire dimension or plane, return
+    // empty set;
+    if (!plane) return [];
+
     return deadReckon(plane[indices.shift()], indices);
   }
 
@@ -20577,15 +20581,15 @@ var DevelopmentApp = function (_React$Component) {
             orders: ['colorName', 'extension', 'size']
           },
           waistInseamData: {
-            data: mutate(skus$2, [waistInseamMutation]),
+            data: mutate(skus$3, [waistInseamMutation]),
             orders: ['colorName', 'waist', 'inseam']
           },
           waistSizeExtensionsData: {
-            data: mutate(skus$2, [sizeExtensionMutation, sizeNameMutation, waistInseamMutation]),
+            data: mutate(skus$3, [sizeExtensionMutation, sizeNameMutation, waistInseamMutation]),
             orders: ['colorName', 'extension', 'waist', 'inseam']
           },
           waistSizeExtensionsColorData: {
-            data: mutate(skus$2, [sizeExtensionMutation, sizeNameMutation, waistInseamMutation]),
+            data: mutate(skus$3, [sizeExtensionMutation, sizeNameMutation, waistInseamMutation]),
             orders: ['waist', 'inseam', 'extension', 'colorName']
           }
         };
