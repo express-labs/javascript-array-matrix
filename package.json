@@ -1,6 +1,6 @@
 {
   "name": "javascript-array-matrix",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A JavaScript module for storing and querying multi-dimensional or n-way array data",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
