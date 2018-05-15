@@ -3,6 +3,7 @@ import ArrayMatrix from '../ArrayMatrix';
 import {
   colorSizes,
   sizeExtensions,
+  sizeExtensionsNullSet,
   waistInseam,
 } from '../../App/examples';
 
@@ -105,6 +106,7 @@ describe('ArrayMatrix', () => {
       const missingSku = entries.find(entry => skus.indexOf(entry.skuId) === -1);
 
       expect(missingSku).not.toBeTruthy();
+      expect(skus.length).toBe(entries.length);
     });
 
     it('should return 16 skus when query by size S', () => {
@@ -115,6 +117,7 @@ describe('ArrayMatrix', () => {
       const missingSku = entries.find(entry => skus.indexOf(entry.skuId) === -1);
 
       expect(missingSku).not.toBeTruthy();
+      expect(skus.length).toBe(entries.length);
     });
     it('should return 16 skus with null values when query by size XXL', () => {
       const entries = arrayMatrix.getDimension({ size: 'XXL' });
@@ -127,6 +130,7 @@ describe('ArrayMatrix', () => {
       const missingSku = validEntries.find(entry => skus.indexOf(entry.skuId) === -1);
 
       expect(missingSku).not.toBeTruthy();
+      expect(skus.length).toBe(validEntries.length);
       expect(nullEntries.length).toBe(12);
     });
     it('should return a sku with id 13100902 when asking for entry S, DUSTY MOSS', () => {
@@ -145,6 +149,7 @@ describe('ArrayMatrix', () => {
       expect(entry).toBe(null);
     });
   });
+
   describe('3 Order ArrayMatrix (Size Extensions)', () => {
     const arrayMatrix = new ArrayMatrix({
       data: mutate(sizeExtensions, [sizeExtensionMutation, sizeNameMutation]),
@@ -159,6 +164,7 @@ describe('ArrayMatrix', () => {
       const missingSku = entries.find(entry => skus.indexOf(entry.skuId) === -1);
 
       expect(missingSku).not.toBeTruthy();
+      expect(skus.length).toBe(entries.length);
     });
 
     it('should return 6 skus when query by colorName RUBY RED and extension Tall', () => {
@@ -169,6 +175,7 @@ describe('ArrayMatrix', () => {
       const missingSku = entries.find(entry => skus.indexOf(entry.skuId) === -1);
 
       expect(missingSku).not.toBeTruthy();
+      expect(skus.length).toBe(entries.length);
     });
     it('should return 2 skus with 1 null values when query by colorName BLACK and size S', () => {
       const entries = arrayMatrix.getDimension({ colorName: 'BLACK', size: 'S' });
@@ -226,6 +233,24 @@ describe('ArrayMatrix', () => {
       expect(errorFn).toThrow();
     });
   });
+  describe('3 Order ArrayMatrix (null Set)', () => {
+    const arrayMatrix = new ArrayMatrix({
+      data: mutate(sizeExtensionsNullSet, [sizeExtensionMutation, sizeNameMutation]),
+      orders: ['colorName', 'extension', 'size'],
+    });
+
+    it('should return 5 skus when query by extension Regular and size M', () => {
+      const entries = arrayMatrix.getDimension({ extension: 'Regular', size: 'M' });
+
+      const skus = ['11979579', '13050962', '13330163', '11471042', '11979494'];
+
+      const missingSku = entries.find(entry => skus.indexOf(entry.skuId) === -1);
+
+      expect(missingSku).not.toBeTruthy();
+      expect(skus.length).toBe(entries.length);
+    });
+  });
+
   describe('3 Order Array Matrix (Waist & Inseam)', () => {
     const arrayMatrix = new ArrayMatrix({
       data: mutate(waistInseam, [waistInseamMutation]),
@@ -240,6 +265,7 @@ describe('ArrayMatrix', () => {
       const missingSku = entries.find(entry => skus.indexOf(entry.skuId) === -1);
 
       expect(missingSku).not.toBeTruthy();
+      expect(skus.length).toBe(entries.length);
     });
 
     it('should return 4 skus when query by colorName BLUE and waist W36', () => {
@@ -250,6 +276,7 @@ describe('ArrayMatrix', () => {
       const missingSku = entries.find(entry => skus.indexOf(entry.skuId) === -1);
 
       expect(missingSku).not.toBeTruthy();
+      expect(skus.length).toBe(entries.length);
     });
     it('should return 10 skus when query by colorName BLUE and inseam L30', () => {
       const entries = arrayMatrix.getDimension({ colorName: 'BLUE', inseam: 'L30' });
@@ -268,6 +295,7 @@ describe('ArrayMatrix', () => {
       const missingSku = entries.find(entry => skus.indexOf(entry.skuId) === -1);
 
       expect(missingSku).not.toBeTruthy();
+      expect(skus.length).toBe(entries.length);
     });
     it('should return a sku with id 11556879 when asking for entry W28, BLUE, L30', () => {
       const entry = arrayMatrix.getEntry({ waist: 'W28', colorName: 'BLUE', inseam: 'L30' });
@@ -294,6 +322,7 @@ describe('ArrayMatrix', () => {
       const missingSku = entries.find(entry => skus.indexOf(entry.skuId) === -1);
 
       expect(missingSku).not.toBeTruthy();
+      expect(skus.length).toBe(entries.length);
     });
     it('should return 10 skus when query by colorName BLUE, extension Regular and inseam L30', () => {
       const entries = arrayMatrix.getDimension({ colorName: 'BLUE', extension: 'Regular', inseam: 'L30' });
@@ -303,6 +332,7 @@ describe('ArrayMatrix', () => {
       const missingSku = entries.find(entry => skus.indexOf(entry.skuId) === -1);
 
       expect(missingSku).not.toBeTruthy();
+      expect(skus.length).toBe(entries.length);
     });
     it('should return 1 sku when query by colorName BLUE, waist W30 and inseam L30', () => {
       const entries = arrayMatrix.getDimension({ colorName: 'BLUE', waist: 'W30', inseam: 'L30' });
@@ -312,6 +342,7 @@ describe('ArrayMatrix', () => {
       const missingSku = entries.find(entry => skus.indexOf(entry.skuId) === -1);
 
       expect(missingSku).not.toBeTruthy();
+      expect(skus.length).toBe(entries.length);
     });
     it('should return 1 sku when query by extension Regular, waist W30 and inseam L30', () => {
       const entries = arrayMatrix.getDimension({ extension: 'Regular', waist: 'W30', inseam: 'L30' });
@@ -321,6 +352,7 @@ describe('ArrayMatrix', () => {
       const missingSku = entries.find(entry => skus.indexOf(entry.skuId) === -1);
 
       expect(missingSku).not.toBeTruthy();
+      expect(skus.length).toBe(entries.length);
     });
     it('should return a sku with id 11556879 when asking for entry W28, BLUE, Regular, L30', () => {
       const entry = arrayMatrix.getEntry({ waist: 'W28', colorName: 'BLUE', extension: 'Regular', inseam: 'L30' });

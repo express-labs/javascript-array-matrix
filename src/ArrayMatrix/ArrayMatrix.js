@@ -173,6 +173,10 @@ const ArrayMatrix = function ArrayMatrix() {
   function deadReckon(plane, indices) {
     if (!indices || !indices.length) return plane;
 
+    // If we are missing an entire dimension or plane, return
+    // empty set;
+    if (!plane) return [];
+
     return deadReckon(plane[indices.shift()], indices);
   }
 
