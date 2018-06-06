@@ -19329,6 +19329,584 @@ var skus = [{
 }];
 
 var skus$1 = [{
+  colorName: 'MOTOR GRAY',
+  skuId: '35299543',
+  size: '28',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35299446',
+  size: '28',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35299611',
+  size: '29',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35299514',
+  size: '29',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35299556',
+  size: '30',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35299459',
+  size: '30',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35299640',
+  size: '30',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35299624',
+  size: '31',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35299527',
+  size: '31',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35299682',
+  size: '31',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35299569',
+  size: '32',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35299462',
+  size: '32',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35299653',
+  size: '32',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35301033',
+  size: '32',
+  ext: 'regular',
+  inseam: '36'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35299530',
+  size: '33',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35299475',
+  size: '34',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35299705',
+  size: '34',
+  ext: 'regular',
+  inseam: '36'
+}, {
+  colorName: 'MOTOR GRAY',
+  skuId: '35299585',
+  size: '36',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287704',
+  size: '28',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287607',
+  size: '28',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287775',
+  size: '29',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287678',
+  size: '29',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287717',
+  size: '30',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287610',
+  size: '30',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287801',
+  size: '30',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287788',
+  size: '31',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287681',
+  size: '31',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287843',
+  size: '31',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287720',
+  size: '32',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287623',
+  size: '32',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287814',
+  size: '32',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287869',
+  size: '32',
+  ext: 'regular',
+  inseam: '36'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287791',
+  size: '33',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287694',
+  size: '33',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287733',
+  size: '34',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287636',
+  size: '34',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287827',
+  size: '34',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287872',
+  size: '34',
+  ext: 'regular',
+  inseam: '36'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287746',
+  size: '36',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287649',
+  size: '36',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'LICORICE',
+  skuId: '35287652',
+  size: '38',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'BLACK',
+  skuId: '15505118',
+  size: '26',
+  ext: 'regular',
+  inseam: '28'
+}, {
+  colorName: 'BLACK',
+  skuId: '15505125',
+  size: '26',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'BLACK',
+  skuId: '12448326',
+  size: '28',
+  ext: 'regular',
+  inseam: '28'
+}, {
+  colorName: 'BLACK',
+  skuId: '35287238',
+  size: '28',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'BLACK',
+  skuId: '35287225',
+  size: '28',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'BLACK',
+  skuId: '35304988',
+  size: '29',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'BLACK',
+  skuId: '35304881',
+  size: '29',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'BLACK',
+  skuId: '12448333',
+  size: '29',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'BLACK',
+  skuId: '35304920',
+  size: '30',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'BLACK',
+  skuId: '35304823',
+  size: '30',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'BLACK',
+  skuId: '35305013',
+  size: '30',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'BLACK',
+  skuId: '35250867',
+  size: '31',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'BLACK',
+  skuId: '35304991',
+  size: '31',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'BLACK',
+  skuId: '35304894',
+  size: '31',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'BLACK',
+  skuId: '35250922',
+  size: '31',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'BLACK',
+  skuId: '35304933',
+  size: '32',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'BLACK',
+  skuId: '35304836',
+  size: '32',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'BLACK',
+  skuId: '35305026',
+  size: '32',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'BLACK',
+  skuId: '35305084',
+  size: '32',
+  ext: 'regular',
+  inseam: '36'
+}, {
+  colorName: 'BLACK',
+  skuId: '35305000',
+  size: '33',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'BLACK',
+  skuId: '35304904',
+  size: '33',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'BLACK',
+  skuId: '35305071',
+  size: '33',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'BLACK',
+  skuId: '35304946',
+  size: '34',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'BLACK',
+  skuId: '35250728',
+  size: '34',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'BLACK',
+  skuId: '35305039',
+  size: '34',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'BLACK',
+  skuId: '35305097',
+  size: '34',
+  ext: 'regular',
+  inseam: '36'
+}, {
+  colorName: 'BLACK',
+  skuId: '35304959',
+  size: '36',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'BLACK',
+  skuId: '35250731',
+  size: '36',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'BLACK',
+  skuId: '35305042',
+  size: '36',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'BLACK',
+  skuId: '35305107',
+  size: '36',
+  ext: 'regular',
+  inseam: '36'
+}, {
+  colorName: 'BLACK',
+  skuId: '35359580',
+  size: '38',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'BLACK',
+  skuId: '35250744',
+  size: '38',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'BLACK',
+  skuId: '35359674',
+  size: '38',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'BLACK',
+  skuId: '12448340',
+  size: '38',
+  ext: 'regular',
+  inseam: '36'
+}, {
+  colorName: 'BLACK',
+  skuId: '35359593',
+  size: '40',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'BLACK',
+  skuId: '35359496',
+  size: '40',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'BLACK',
+  skuId: '12448357',
+  size: '40',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'BLACK',
+  skuId: '35359739',
+  size: '40',
+  ext: 'regular',
+  inseam: '36'
+}, {
+  colorName: 'BLACK',
+  skuId: '14468780',
+  size: '42',
+  ext: 'regular',
+  inseam: '28'
+}, {
+  colorName: 'BLACK',
+  skuId: '14468797',
+  size: '42',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'BLACK',
+  skuId: '14468742',
+  size: '42',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'BLACK',
+  skuId: '14468803',
+  size: '42',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'BLACK',
+  skuId: '14468759',
+  size: '42',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'BLACK',
+  skuId: '14468810',
+  size: '42',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'BLACK',
+  skuId: '14468766',
+  size: '42',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'BLACK',
+  skuId: '14468827',
+  size: '42',
+  ext: 'regular',
+  inseam: '36'
+}, {
+  colorName: 'BLACK',
+  skuId: '14468773',
+  size: '42',
+  ext: 'regular',
+  inseam: '36'
+}, {
+  colorName: 'BLACK',
+  skuId: '14468834',
+  size: '42',
+  ext: 'regular',
+  inseam: '38'
+}, {
+  colorName: 'KHAKI',
+  skuId: '35287403',
+  size: '28',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'KHAKI',
+  skuId: '35287306',
+  size: '28',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'KHAKI',
+  skuId: '35287416',
+  size: '30',
+  ext: 'regular',
+  inseam: '30'
+}, {
+  colorName: 'KHAKI',
+  skuId: '35250977',
+  size: '30',
+  ext: 'regular',
+  inseam: '32'
+}, {
+  colorName: 'KHAKI',
+  skuId: '35251196',
+  size: '31',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'KHAKI',
+  skuId: '35251183',
+  size: '36',
+  ext: 'regular',
+  inseam: '34'
+}, {
+  colorName: 'KHAKI',
+  skuId: '35251015',
+  size: '38',
+  ext: 'regular',
+  inseam: '32'
+}];
+
+var skus$2 = [{
   skuId: '11979555',
   sizeName: 'X Small',
   colorName: 'GREEN',
@@ -19763,6 +20341,404 @@ var skus$1 = [{
 }];
 
 var skus$3 = [{
+  skuId: '11979555',
+  sizeName: 'X Small',
+  colorName: 'GREEN',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11979562',
+  sizeName: 'Small',
+  colorName: 'GREEN',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11979579',
+  sizeName: 'Medium',
+  colorName: 'GREEN',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11979586',
+  sizeName: 'Large',
+  colorName: 'GREEN',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11979593',
+  sizeName: 'X Large',
+  colorName: 'GREEN',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11979609',
+  sizeName: 'XX Large',
+  colorName: 'GREEN',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '12261345',
+  sizeName: 'M Tall',
+  colorName: 'GREEN',
+  sizeExtension1: 'M',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '12261352',
+  sizeName: 'L Tall',
+  colorName: 'GREEN',
+  sizeExtension1: 'L',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '12261369',
+  sizeName: 'XL Tall',
+  colorName: 'GREEN',
+  sizeExtension1: 'XL',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '12261376',
+  sizeName: 'XXL Tall',
+  colorName: 'GREEN',
+  sizeExtension1: 'XXL',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '13050924',
+  sizeName: 'XXXS',
+  colorName: 'NAVY',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13050931',
+  sizeName: 'XX Small',
+  colorName: 'NAVY',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13050948',
+  sizeName: 'X Small',
+  colorName: 'NAVY',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13050955',
+  sizeName: 'Small',
+  colorName: 'NAVY',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13050962',
+  sizeName: 'Medium',
+  colorName: 'NAVY',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13050979',
+  sizeName: 'Large',
+  colorName: 'NAVY',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13050986',
+  sizeName: 'X Large',
+  colorName: 'NAVY',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13050993',
+  sizeName: 'XX Large',
+  colorName: 'NAVY',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13051006',
+  sizeName: 'XXX Large',
+  colorName: 'NAVY',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13051013',
+  sizeName: 'XS Tall',
+  colorName: 'NAVY',
+  sizeExtension1: 'XS',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '13051020',
+  sizeName: 'S Tall',
+  colorName: 'NAVY',
+  sizeExtension1: 'S',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '13051037',
+  sizeName: 'M Tall',
+  colorName: 'NAVY',
+  sizeExtension1: 'M',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '13051044',
+  sizeName: 'L Tall',
+  colorName: 'NAVY',
+  sizeExtension1: 'L',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '13051051',
+  sizeName: 'XL Tall',
+  colorName: 'NAVY',
+  sizeExtension1: 'XL',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '13051068',
+  sizeName: 'XXL Tall',
+  colorName: 'NAVY',
+  sizeExtension1: 'XXL',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '13051075',
+  sizeName: 'XXXL TALL',
+  colorName: 'NAVY',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13330125',
+  sizeName: 'XXXS',
+  colorName: 'RUBY RED',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13330132',
+  sizeName: 'XX Small',
+  colorName: 'RUBY RED',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13330149',
+  sizeName: 'X Small',
+  colorName: 'RUBY RED',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13330156',
+  sizeName: 'Small',
+  colorName: 'RUBY RED',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13330163',
+  sizeName: 'Medium',
+  colorName: 'RUBY RED',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13330170',
+  sizeName: 'Large',
+  colorName: 'RUBY RED',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13330187',
+  sizeName: 'X Large',
+  colorName: 'RUBY RED',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13330194',
+  sizeName: 'XX Large',
+  colorName: 'RUBY RED',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13330200',
+  sizeName: 'XXX Large',
+  colorName: 'RUBY RED',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '13330217',
+  sizeName: 'XS Tall',
+  colorName: 'RUBY RED',
+  sizeExtension1: 'XS',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '13330224',
+  sizeName: 'S Tall',
+  colorName: 'RUBY RED',
+  sizeExtension1: 'S',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '13330231',
+  sizeName: 'M Tall',
+  colorName: 'RUBY RED',
+  sizeExtension1: 'M',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '13330248',
+  sizeName: 'L Tall',
+  colorName: 'RUBY RED',
+  sizeExtension1: 'L',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '13330255',
+  sizeName: 'XL Tall',
+  colorName: 'RUBY RED',
+  sizeExtension1: 'XL',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '13330262',
+  sizeName: 'XXL Tall',
+  colorName: 'RUBY RED',
+  sizeExtension1: 'XXL',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '13330279',
+  sizeName: 'XXXL TALL',
+  colorName: 'RUBY RED',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11471202',
+  sizeName: 'M Tall',
+  colorName: 'BLACK',
+  sizeExtension1: 'M',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '11471219',
+  sizeName: 'L Tall',
+  colorName: 'BLACK',
+  sizeExtension1: 'L',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '11471226',
+  sizeName: 'XL Tall',
+  colorName: 'BLACK',
+  sizeExtension1: 'XL',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '11514107',
+  sizeName: 'XXL Tall',
+  colorName: 'BLACK',
+  sizeExtension1: 'XXL',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '11471028',
+  sizeName: 'X Small',
+  colorName: 'WHITE',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11471035',
+  sizeName: 'Small',
+  colorName: 'WHITE',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11471042',
+  sizeName: 'Medium',
+  colorName: 'WHITE',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11471059',
+  sizeName: 'Large',
+  colorName: 'WHITE',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11471066',
+  sizeName: 'X Large',
+  colorName: 'WHITE',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11512752',
+  sizeName: 'XX Large',
+  colorName: 'WHITE',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11471097',
+  sizeName: 'M Tall',
+  colorName: 'WHITE',
+  sizeExtension1: 'M',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '11471103',
+  sizeName: 'L Tall',
+  colorName: 'WHITE',
+  sizeExtension1: 'L',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '11471110',
+  sizeName: 'XL Tall',
+  colorName: 'WHITE',
+  sizeExtension1: 'XL',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '11514091',
+  sizeName: 'XXL Tall',
+  colorName: 'WHITE',
+  sizeExtension1: 'XXL',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '11979470',
+  sizeName: 'X Small',
+  colorName: 'GRAY',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11979487',
+  sizeName: 'Small',
+  colorName: 'GRAY',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11979494',
+  sizeName: 'Medium',
+  colorName: 'GRAY',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11979500',
+  sizeName: 'Large',
+  colorName: 'GRAY',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11979517',
+  sizeName: 'X Large',
+  colorName: 'GRAY',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '11979524',
+  sizeName: 'XX Large',
+  colorName: 'GRAY',
+  sizeExtension1: null,
+  sizeExtension2: null
+}, {
+  skuId: '12261284',
+  sizeName: 'M Tall',
+  colorName: 'GRAY',
+  sizeExtension1: 'M',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '12261291',
+  sizeName: 'L Tall',
+  colorName: 'GRAY',
+  sizeExtension1: 'L',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '12261307',
+  sizeName: 'XL Tall',
+  colorName: 'GRAY',
+  sizeExtension1: 'XL',
+  sizeExtension2: 'Tall'
+}, {
+  skuId: '12261314',
+  sizeName: 'XXL Tall',
+  colorName: 'GRAY',
+  sizeExtension1: 'XXL',
+  sizeExtension2: 'Tall'
+}];
+
+var skus$4 = [{
   skuId: '11556855',
   sizeName: 'W28 L28',
   colorName: 'BLUE',
@@ -20151,8 +21127,10 @@ var waistInseamMutation = function waistInseamMutation(data) {
 var flatten$1 = function flatten(array) {
   if (!(array instanceof Array)) return array;
   return array.reduce(function (a, b) {
-    if (b instanceof Array) a.push.apply(a, flatten(b)); // eslint-disable-line prefer-spread
-    else if (!b) a.push(null);else a.push(b);
+    if (b instanceof Array) {
+      // if (!b.length) a.push(null);
+      a.push.apply(a, flatten(b)); // eslint-disable-line prefer-spread
+    } else if (!b) a.push(null);else a.push(b);
     return a;
   }, []);
 };
@@ -20400,19 +21378,28 @@ var ArrayMatrix$1 = function ArrayMatrix() {
     var coords = getTuple(points);
 
     var variableIndex = coords.indexOf(null);
-
     var entries = function () {
       if (variableIndex === 0) {
         coords.splice(0, 1);
 
         return matrix.map(function (aIndex) {
-          return deadReckon(aIndex, [].concat(coords));
+          var cell = deadReckon(aIndex, [].concat(coords));
+          return cell && cell.length ? cell : [null];
+        });
+      }
+      // Need see if we have the first half of the query;
+      var firstSlice = deadReckon(matrix, coords.slice(0, variableIndex));
+      if (firstSlice) {
+        // If we have the first half of the query, deadreckon
+        // on the pivot.
+        return firstSlice.map(function (array) {
+          return deadReckon(array, coords.slice(variableIndex + 1));
         });
       }
 
-      return deadReckon(matrix, coords.slice(0, variableIndex)).map(function (array) {
-        return deadReckon(array, coords.slice(variableIndex + 1));
-      });
+      // The first half of the query doesn't exist (i.e., the dimension
+      // is empty), so don't loop over the pivot, just return a null filled array;
+      return new Array(Object.keys(axes[props.orders[variableIndex]]).length).fill(null);
     }();
 
     return flatten$1(entries);
@@ -20576,20 +21563,28 @@ var DevelopmentApp = function (_React$Component) {
             data: mutate(skus, [sizeNameMutation]),
             orders: ['colorName', 'size']
           },
+          missingExtensionsData: {
+            data: skus$1,
+            orders: ['colorName', 'ext', 'size', 'inseam']
+          },
           sizeExtensionsData: {
-            data: mutate(skus$1, [sizeExtensionMutation, sizeNameMutation]),
+            data: mutate(skus$2, [sizeExtensionMutation, sizeNameMutation]),
+            orders: ['colorName', 'extension', 'size']
+          },
+          sizeExtensionsNullSetData: {
+            data: mutate(skus$3, [sizeExtensionMutation, sizeNameMutation]),
             orders: ['colorName', 'extension', 'size']
           },
           waistInseamData: {
-            data: mutate(skus$3, [waistInseamMutation]),
+            data: mutate(skus$4, [waistInseamMutation]),
             orders: ['colorName', 'waist', 'inseam']
           },
           waistSizeExtensionsData: {
-            data: mutate(skus$3, [sizeExtensionMutation, sizeNameMutation, waistInseamMutation]),
+            data: mutate(skus$4, [sizeExtensionMutation, sizeNameMutation, waistInseamMutation]),
             orders: ['colorName', 'extension', 'waist', 'inseam']
           },
           waistSizeExtensionsColorData: {
-            data: mutate(skus$3, [sizeExtensionMutation, sizeNameMutation, waistInseamMutation]),
+            data: mutate(skus$4, [sizeExtensionMutation, sizeNameMutation, waistInseamMutation]),
             orders: ['waist', 'inseam', 'extension', 'colorName']
           }
         };
@@ -20604,7 +21599,9 @@ var DevelopmentApp = function (_React$Component) {
         return _extends({}, tensors, { perf: perf });
       }, function () {
         window.colorSizeMatrix = _this2.state.colorSizesData;
+        window.missingExtensions = _this2.state.missingExtensionsData;
         window.sizeExtensionsMatrix = _this2.state.sizeExtensionsData;
+        window.sizeExtensionsNullSetMatrix = _this2.state.sizeExtensionsNullSetData;
         window.waistInseamMatrix = _this2.state.waistInseamData;
         window.waistSizeExtensionsMatrix = _this2.state.waistSizeExtensionsData;
       });
@@ -20622,9 +21619,11 @@ var DevelopmentApp = function (_React$Component) {
       var _state = this.state,
           colorSizesData = _state.colorSizesData,
           sizeExtensionsData = _state.sizeExtensionsData,
+          sizeExtensionsNullSetData = _state.sizeExtensionsNullSetData,
           waistInseamData = _state.waistInseamData,
           waistSizeExtensionsData = _state.waistSizeExtensionsData,
-          waistSizeExtensionsColorData = _state.waistSizeExtensionsColorData;
+          waistSizeExtensionsColorData = _state.waistSizeExtensionsColorData,
+          missingExtensionsData = _state.missingExtensionsData;
 
 
       return react.createElement(
@@ -20662,6 +21661,16 @@ var DevelopmentApp = function (_React$Component) {
             'option',
             { value: '4' },
             'Waist, Inseam, Size Extensions, and Color'
+          ),
+          react.createElement(
+            'option',
+            { value: '5' },
+            'Missing Extensions'
+          ),
+          react.createElement(
+            'option',
+            { value: '6' },
+            'Color, Size Extensions, and Sizes (Null set)'
           )
         ),
         react.createElement('hr', null),
@@ -21156,6 +22165,101 @@ var DevelopmentApp = function (_React$Component) {
               '{ waist: \'W28\', colorName: \'BLUE\', extension: \'Regular\', inseam: \'L30\' }'
             ),
             DevelopmentApp.getQueryTable(waistSizeExtensionsColorData, ['skuId', 'colorName', 'sizeName', 'extension', 'waist', 'inseam'], { waist: 'W28', colorName: 'BLUE', extension: 'Regular', inseam: 'L30' }, 'getEntry')
+          )
+        ),
+        this.state.value === '5' && react.createElement(
+          'section',
+          { id: 'example--5' },
+          react.createElement(
+            'h2',
+            null,
+            '4 Order Matrix with Missing Data'
+          ),
+          missingExtensionsData && react.createElement(
+            'div',
+            null,
+            react.createElement(
+              'h3',
+              null,
+              'Matrix Data'
+            ),
+            react.createElement(ReactJson, {
+              src: missingExtensionsData.debug(),
+              theme: 'monokai',
+              iconStyle: 'triangle',
+              name: 'waistSizeExtensionsData',
+              collapsed: 1,
+              enableClipboard: false
+            }),
+            react.createElement(
+              'pre',
+              null,
+              'Data parsed in ' + this.state.perf.missingExtensionsData + ' milliseconds.'
+            ),
+            react.createElement(
+              'h3',
+              null,
+              'Dimension Queries'
+            ),
+            react.createElement(
+              'h4',
+              null,
+              'Query by colorName, extension and waist'
+            ),
+            react.createElement(
+              'pre',
+              null,
+              '{ colorName: \'KHAKI\', ext: \'regular\', size: \'29\' }'
+            ),
+            DevelopmentApp.getQueryTable(missingExtensionsData, ['skuId', 'colorName', 'ext', 'size', 'inseam'], { colorName: 'KHAKI', ext: 'regular', size: '29' })
+          )
+        ),
+        this.state.value === '6' && react.createElement(
+          'section',
+          { id: 'example--6' },
+          react.createElement(
+            'h2',
+            null,
+            '3 Order Matrix: Color, Size Extensions, and Sizes (Null set)'
+          ),
+          sizeExtensionsNullSetData && react.createElement(
+            'div',
+            null,
+            react.createElement(
+              'h3',
+              null,
+              'Matrix Data'
+            ),
+            react.createElement(ReactJson, {
+              src: sizeExtensionsNullSetData.debug(),
+              theme: 'monokai',
+              iconStyle: 'triangle',
+              collapsed: 1,
+              name: 'sizeExtensions',
+              enableClipboard: false
+            }),
+            react.createElement(
+              'pre',
+              null,
+              'Data parsed in ' + this.state.perf.sizeExtensionsData + ' milliseconds.'
+            ),
+            react.createElement(
+              'h3',
+              null,
+              'Dimension Queries'
+            ),
+            react.createElement(
+              'h4',
+              null,
+              'Query by extension and size'
+            ),
+            react.createElement(
+              'pre',
+              null,
+              '{ extension: \'Regular\', size: \'M\' }'
+            ),
+            DevelopmentApp.getQueryTable(sizeExtensionsNullSetData, ['skuId', 'colorName', 'extension', 'size'], { extension: 'Regular', size: 'M' }),
+            react.createElement('hr', null)
           )
         )
       );

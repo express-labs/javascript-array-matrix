@@ -6,7 +6,9 @@ import React from 'react';
 import ReactJson from 'react-json-view';
 import {
   colorSizes,
+  missingExtensions,
   sizeExtensions,
+  sizeExtensionsNullSet,
   waistInseam,
 } from './examples';
 import {
@@ -75,8 +77,16 @@ class DevelopmentApp extends React.Component {
           data: mutate(colorSizes, [sizeNameMutation]),
           orders: ['colorName', 'size'],
         },
+        missingExtensionsData: {
+          data: missingExtensions,
+          orders: ['colorName', 'ext', 'size', 'inseam'],
+        },
         sizeExtensionsData: {
           data: mutate(sizeExtensions, [sizeExtensionMutation, sizeNameMutation]),
+          orders: ['colorName', 'extension', 'size'],
+        },
+        sizeExtensionsNullSetData: {
+          data: mutate(sizeExtensionsNullSet, [sizeExtensionMutation, sizeNameMutation]),
           orders: ['colorName', 'extension', 'size'],
         },
         waistInseamData: {
@@ -103,7 +113,9 @@ class DevelopmentApp extends React.Component {
       return Object.assign({}, tensors, { perf });
     }, () => {
       window.colorSizeMatrix = this.state.colorSizesData;
+      window.missingExtensions = this.state.missingExtensionsData;
       window.sizeExtensionsMatrix = this.state.sizeExtensionsData;
+      window.sizeExtensionsNullSetMatrix = this.state.sizeExtensionsNullSetData;
       window.waistInseamMatrix = this.state.waistInseamData;
       window.waistSizeExtensionsMatrix = this.state.waistSizeExtensionsData;
     });
@@ -119,9 +131,11 @@ class DevelopmentApp extends React.Component {
     const {
       colorSizesData,
       sizeExtensionsData,
+      sizeExtensionsNullSetData,
       waistInseamData,
       waistSizeExtensionsData,
       waistSizeExtensionsColorData,
+      missingExtensionsData,
     } = this.state;
 
     return (
@@ -133,6 +147,8 @@ class DevelopmentApp extends React.Component {
           <option value="2">Color, Waist, and Inseam</option>
           <option value="3">Color, Size Extensions, Waist, and Inseam</option>
           <option value="4">Waist, Inseam, Size Extensions, and Color</option>
+          <option value="5">Missing Extensions</option>
+          <option value="6">Color, Size Extensions, and Sizes (Null set)</option>
         </select>
         <hr />
         { (this.state.value === '0') && (
@@ -327,6 +343,51 @@ class DevelopmentApp extends React.Component {
               <h3>Entry Queries</h3>
               <pre>{`{ waist: 'W28', colorName: 'BLUE', extension: 'Regular', inseam: 'L30' }`}</pre>
               {DevelopmentApp.getQueryTable(waistSizeExtensionsColorData, ['skuId', 'colorName', 'sizeName', 'extension', 'waist', 'inseam'], { waist: 'W28', colorName: 'BLUE', extension: 'Regular', inseam: 'L30' }, 'getEntry')}
+            </div>}
+          </section>
+        )}
+
+        { (this.state.value === '5') && (
+          <section id="example--5">
+            <h2>4 Order Matrix with Missing Data</h2>
+            {missingExtensionsData && <div>
+              <h3>Matrix Data</h3>
+              <ReactJson
+                src={missingExtensionsData.debug()}
+                theme="monokai"
+                iconStyle="triangle"
+                name="waistSizeExtensionsData"
+                collapsed={1}
+                enableClipboard={false}
+              />
+              <pre>{`Data parsed in ${this.state.perf.missingExtensionsData} milliseconds.`}</pre>
+              <h3>Dimension Queries</h3>
+              <h4>Query by colorName, extension and waist</h4>
+              <pre>{`{ colorName: 'KHAKI', ext: 'regular', size: '29' }`}</pre>
+              {DevelopmentApp.getQueryTable(missingExtensionsData, ['skuId', 'colorName', 'ext', 'size', 'inseam'], { colorName: 'KHAKI', ext: 'regular', size: '29' })}
+            </div>}
+          </section>
+        )}
+
+        { (this.state.value === '6') && (
+          <section id="example--6">
+            <h2>3 Order Matrix: Color, Size Extensions, and Sizes (Null set)</h2>
+            {sizeExtensionsNullSetData && <div>
+              <h3>Matrix Data</h3>
+              <ReactJson
+                src={sizeExtensionsNullSetData.debug()}
+                theme="monokai"
+                iconStyle="triangle"
+                collapsed={1}
+                name="sizeExtensions"
+                enableClipboard={false}
+              />
+              <pre>{`Data parsed in ${this.state.perf.sizeExtensionsData} milliseconds.`}</pre>
+              <h3>Dimension Queries</h3>
+              <h4>Query by extension and size</h4>
+              <pre>{`{ extension: 'Regular', size: 'M' }`}</pre>
+              {DevelopmentApp.getQueryTable(sizeExtensionsNullSetData, ['skuId', 'colorName', 'extension', 'size'], { extension: 'Regular', size: 'M' })}
+              <hr />
             </div>}
           </section>
         )}

@@ -171,7 +171,7 @@ const ArrayMatrix = function ArrayMatrix() {
    * @returns {Any} the node at the end of the traversal
    */
   function deadReckon(plane, indices) {
-    if (!indices || !indices.length) return plane;
+    if ((!indices || !indices.length)) return plane;
 
     // If we are missing an entire dimension or plane, return
     // empty set;
@@ -235,16 +235,26 @@ const ArrayMatrix = function ArrayMatrix() {
     const coords = getTuple(points);
 
     const variableIndex = coords.indexOf(null);
-
     const entries = (() => {
       if (variableIndex === 0) {
         coords.splice(0, 1);
 
-        return matrix.map(aIndex => deadReckon(aIndex, [].concat(coords)));
+        return matrix.map((aIndex) => {
+          const cell = deadReckon(aIndex, [].concat(coords));
+          return cell && cell.length ? cell : [null];
+        });
+      }
+      // Need see if we have the first half of the query;
+      const firstSlice = deadReckon(matrix, coords.slice(0, variableIndex));
+      if (firstSlice) {
+        // If we have the first half of the query, deadreckon
+        // on the pivot.
+        return firstSlice.map(array => deadReckon(array, coords.slice(variableIndex + 1)));
       }
 
-      return deadReckon(matrix, coords.slice(0, variableIndex))
-              .map(array => deadReckon(array, coords.slice(variableIndex + 1)));
+      // The first half of the query doesn't exist (i.e., the dimension
+      // is empty), so don't loop over the pivot, just return a null filled array;
+      return new Array(Object.keys(axes[props.orders[variableIndex]]).length).fill(null);
     })();
 
     return flatten(entries);

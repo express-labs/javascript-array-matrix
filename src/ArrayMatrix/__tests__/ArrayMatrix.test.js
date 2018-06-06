@@ -2,6 +2,7 @@ import ArrayMatrix from '../ArrayMatrix';
 
 import {
   colorSizes,
+  missingExtensions,
   sizeExtensions,
   sizeExtensionsNullSet,
   waistInseam,
@@ -241,13 +242,13 @@ describe('ArrayMatrix', () => {
 
     it('should return 5 skus when query by extension Regular and size M', () => {
       const entries = arrayMatrix.getDimension({ extension: 'Regular', size: 'M' });
-
       const skus = ['11979579', '13050962', '13330163', '11471042', '11979494'];
 
-      const missingSku = entries.find(entry => skus.indexOf(entry.skuId) === -1);
+      const missingSku = entries.find(entry => entry && skus.indexOf(entry.skuId) === -1);
 
       expect(missingSku).not.toBeTruthy();
-      expect(skus.length).toBe(entries.length);
+      // Shouldn't "find" the null value;
+      expect(skus.length).toBe(entries.length - 1);
     });
   });
 
@@ -358,6 +359,19 @@ describe('ArrayMatrix', () => {
       const entry = arrayMatrix.getEntry({ waist: 'W28', colorName: 'BLUE', extension: 'Regular', inseam: 'L30' });
 
       expect(entry.skuId).toBe('11556879');
+    });
+  });
+  describe('4 Order Array Matrix (Size Extensions, Waist & Inseam) with missing Extension', () => {
+    const arrayMatrix = new ArrayMatrix({
+      data: missingExtensions,
+      orders: ['colorName', 'ext', 'size', 'inseam'],
+    });
+    it('should return 6 null values', () => {
+      const entries = arrayMatrix.getDimension({ colorName: 'KHAKI', ext: 'regular', size: '29' });
+      const nonNullSkus = entries.find(entry => entry !== null);
+
+      expect(nonNullSkus).not.toBeTruthy();
+      expect(entries.length).toBe(6);
     });
   });
 });

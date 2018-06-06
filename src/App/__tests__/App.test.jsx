@@ -50,4 +50,16 @@ describe('<App />', () => {
     wrapper.update();
     expect(wrapper.find('#example--4').length).toBe(1);
   });
+  it('should render example 6', () => {
+    const wrapper = shallow(<App />);
+    wrapper.find('.select').simulate('change', { target: { value: '5' } });
+    wrapper.update();
+    expect(wrapper.find('#example--5').length).toBe(1);
+  });
+  it('should render example 7', () => {
+    const wrapper = shallow(<App />);
+    wrapper.find('.select').simulate('change', { target: { value: '6' } });
+    wrapper.update();
+    expect(wrapper.find('#example--6').length).toBe(1);
+  });
 });

@@ -9,8 +9,10 @@
 const flatten = (array) => {
   if (!(array instanceof Array)) return array;
   return array.reduce((a, b) => {
-    if (b instanceof Array) a.push.apply(a, flatten(b)); // eslint-disable-line prefer-spread
-    else if (!b) a.push(null);
+    if (b instanceof Array) {
+      // if (!b.length) a.push(null);
+      a.push.apply(a, flatten(b)); // eslint-disable-line prefer-spread
+    } else if (!b) a.push(null);
     else a.push(b);
     return a;
   }, []);
