@@ -27,6 +27,9 @@
     "type": "git",
     "url": "git+https://github.com/express-labs/javascript-array-matrix"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "author": "Tim Steele",
   "license": "MIT",
   "bugs": {
