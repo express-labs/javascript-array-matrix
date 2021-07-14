@@ -1,6 +1,6 @@
 {
-  "name": "javascript-array-matrix",
-  "version": "0.0.7",
+  "name": "@express-labs/javascript-array-matrix",
+  "version": "0.0.8",
   "description": "A JavaScript module for storing and querying multi-dimensional or n-way array data",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
